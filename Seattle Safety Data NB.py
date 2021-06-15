@@ -13,7 +13,7 @@ print('Remote blob path: ' + wasbs_path)
 # COMMAND ----------
 
 df = spark.read.parquet(wasbs_path)
-print('Register this is making a change frm a cloned repo DataFrame as a SQL temporary view: source')
+print('Register this is making a change from a cloned repo DataFrame as a SQL temporary view: source')
 df.createOrReplaceTempView('source')
 
 # COMMAND ----------
